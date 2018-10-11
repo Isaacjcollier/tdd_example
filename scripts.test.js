@@ -1,53 +1,52 @@
-const { sum, divide } = require('./scripts')
+let { add, subtract, divide, multiply, calculator } = require('./scripts')
 
-let thing;
+describe("calculator", ()=>{
 
-describe("sum", ()=>{
-  test("sum should add 1 and 2 to equal 3", ()=>{
-    //arrange
-    const expected = 3;
+  // describe("Addition", () => {
+  //   test("should add firstArg and secondArg", ()=>{
+  //     let result = add(1,2)
+  //     // let result = calculator(1,2,'add')
+  //
+  //     expect(result).toBe(3);
+  //   })
+  // })
+  //
+  // describe("Subtract", () => {
+  //   test("should subtract firstArg from secondArg", ()=>{
+  //     let result = subtract(4,2)
+  //     // let result = calculator(4,2,'subtract')
+  //
+  //     expect(result).toBe(2);
+  //     })
+  //   })
+  //
+  // describe("Divide", () => {
+  //   test("should divide firstArg from secondArg", ()=>{
+  //     let result = divide(9,3)
+  //     // let result = calculator(9,3,'divide')
+  //
+  //     expect(result).toBe(3);
+  //   })
+  // })
+  //
+  // describe("Multiply", () => {
+  //   test("should multiply firstArg and secondArg", ()=>{
+  //     let result = multiply(3,2)
+  //     // let result = calculator(3,2,'multiply')
+  //
+  //     expect(result).toBe(6);
+  //   })
+  // })
 
-    //act
-    const actual = sum(1,2)
-
-    //assert
-    expect(actual).toBe(expected);
-  })
-})
-
-describe("divide", ()=>{
-  beforeEach(()=>{
-    thing = 3;
-  })
-
-  afterEach(()=>{
-    thing = null;
-  })
-
-  it("should exist", ()=> {
-    expect(divide).not.toThrow(Error);
-  });
-
-  it("should divide 6 by 3 to equal 2", ()=>{
-    //arrange
-    const expected = 2;
-    thing = 4;
-    //act
-    const actual = divide(6,3);
-    //assert
-    expect(actual).toBe(expected);
-  })
-
-  it("should divide 8 by 2 to equal 4", ()=>{
-    const expected = 4;
-    const actual = divide(8,2);
-    expect(actual).toBe(expected);
-  })
-
-  it("should throw an exception when dividing by 0", ()=>{
-    //arrange
-    const func = ()=>divide(3,0)
-    //act and assert
-    expect(func).toThrow(Error);
-  })
+  // -------------------------------------
+  // Error Handling
+  // -------------------------------------
+  //
+  // describe("SquareRoot", () => {
+  //   test("should not be supported on current calculator", () => {
+  //     let unsupportedOperator = calculator(3,4,'squareRoot')
+  //
+  //     expect(unsupportedOperator).toBe("operator not supported")
+  //   })
+  // })
 });

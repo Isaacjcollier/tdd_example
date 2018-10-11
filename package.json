@@ -1,7 +1,7 @@
 {
   "name": "tdd",
   "version": "1.0.0",
-  "description": "",
+  "description": "Choose your own names. I'll use placeholders!",
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll"
@@ -11,5 +11,14 @@
   "dependencies": {},
   "devDependencies": {
     "jest": "^23.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameron-earl/tdd-demo.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/cameron-earl/tdd-demo/issues"
+  },
+  "homepage": "https://github.com/cameron-earl/tdd-demo#readme"
 }
